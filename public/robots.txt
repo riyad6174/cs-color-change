@@ -1,0 +1,19 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: SemrushBot
+Disallow:
+User-agent: Twitterbot
+Allow: /blog/*
+
+User-agent: *
+Disallow:
+
+Disallow: /test-private-dining
+
+Disallow: /test-trafalgar-private-dining
+
+Disallow: /test-hplborn-private-dining
+
+Disallow: /blog/special-offer-25-percent-off-welcoming-spring-with-indian-fine-dining
+
+Sitemap: https://colonelsaab.co.uk/sitemap.xml
