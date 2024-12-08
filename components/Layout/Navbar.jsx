@@ -70,7 +70,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='navbar navbar-light sticky-top py-1 px-3 px-sm-5 bg-success'>
+      <nav
+        className='navbar navbar-light sticky-top py-1 px-3 px-sm-5 '
+        style={{ backgroundColor: '#641F23' }}
+      >
         <div className='navbar-nav w-100'>
           <div className='row'>
             <div className='col-12 col-sm-4 d-flex justify-content-between align-items-center align-items-sm-start justify-content-sm-center d-sm-block'>
@@ -145,14 +148,14 @@ const Navbar = () => {
                   type='button'
                   className='dropbtn   btn rounded-0 text-light custom-cursor'
                   style={{
-                    backgroundColor: '#641f23',
+                    backgroundColor: '#767158',
                   }}
                   onMouseOver={(e) => {
                     e.target.classList.add(
                       'bg-transparent',
                       'border',
                       'border-1',
-                      'border-warning'
+                      'border-white'
                     );
                   }}
                   onMouseOut={(e) => {
@@ -160,7 +163,7 @@ const Navbar = () => {
                       'bg-transparent',
                       'border',
                       'border-1',
-                      'border-warning'
+                      'border-white'
                     );
                   }}
                   onClick={() => {
@@ -230,7 +233,7 @@ const Navbar = () => {
         onHide={() => {
           setMenuShow(false);
         }}
-        className='bg-success'
+        className='bg-warning'
         style={{ width: windowSize.width >= 768 && '20%' }}
       >
         <Offcanvas.Header>
@@ -261,7 +264,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/'
@@ -269,12 +272,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -286,7 +289,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/menu'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu  text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu  body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu  text-light text-decoration-none custom-cursor'
                       }
                       href='/menu'
@@ -294,12 +297,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/menu') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/menu') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -312,7 +315,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/story'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/story'
@@ -320,12 +323,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/story') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/story') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -337,7 +340,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/about-the-art'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/about-the-art'
@@ -345,12 +348,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/about-the-art') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/about-the-art') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -362,7 +365,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/Weddingsandevents'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/Weddingsandevents'
@@ -370,12 +373,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/Weddingsandevents') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/Weddingsandevents') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -388,7 +391,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/private-dining-rooms'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/private-dining-rooms'
@@ -396,12 +399,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/private-dining-rooms') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/private-dining-rooms') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -415,7 +418,7 @@ const Navbar = () => {
                       className={
                         location.pathname ===
                         '/whats-on/a-unique-valentines-date-experience-in-holborn-and-trafalgar-square'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/whats-on/a-unique-valentines-date-experience-in-holborn-and-trafalgar-square'
@@ -426,7 +429,7 @@ const Navbar = () => {
                           '/whats-on/a-unique-valentines-date-experience-in-holborn-and-trafalgar-square'
                         ) {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
@@ -434,7 +437,7 @@ const Navbar = () => {
                           location.pathname !==
                           '/whats-on/a-unique-valentines-date-experience-in-holborn-and-trafalgar-square'
                         ) {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -448,7 +451,7 @@ const Navbar = () => {
                       className={
                         location.pathname ===
                         '/whats-on/celebrate-the-festive-season-at-colonel-saab-book-your-christmas-event-or-join-us-on-christmas-day'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/whats-on/celebrate-the-festive-season-at-colonel-saab-book-your-christmas-event-or-join-us-on-christmas-day'
@@ -459,7 +462,7 @@ const Navbar = () => {
                           '/whats-on/celebrate-the-festive-season-at-colonel-saab-book-your-christmas-event-or-join-us-on-christmas-day'
                         ) {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
@@ -467,7 +470,7 @@ const Navbar = () => {
                           location.pathname !==
                           '/whats-on/celebrate-the-festive-season-at-colonel-saab-book-your-christmas-event-or-join-us-on-christmas-day'
                         ) {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -481,7 +484,7 @@ const Navbar = () => {
                       className={
                         location.pathname ===
                         '/whats-on/new-years-eve-london-at-colonel-saab-a-night-of-indulgence'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/whats-on/new-years-eve-london-at-colonel-saab-a-night-of-indulgence'
@@ -492,7 +495,7 @@ const Navbar = () => {
                           '/whats-on/new-years-eve-london-at-colonel-saab-a-night-of-indulgence'
                         ) {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
@@ -500,7 +503,7 @@ const Navbar = () => {
                           location.pathname !==
                           '/whats-on/new-years-eve-london-at-colonel-saab-a-night-of-indulgence'
                         ) {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -512,7 +515,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === "/wedding-dinner"
-                          ? "d-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor"
+                          ? "d-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor"
                           : "d-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor"
                       }
                       href="/wedding-dinner"
@@ -520,12 +523,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== "/wedding-dinner") {
                           e.target.classList.remove("text-light");
-                          e.target.classList.add("text-warning");
+                          e.target.classList.add("body-text");
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== "/wedding-dinner") {
-                          e.target.classList.remove("text-warning");
+                          e.target.classList.remove("body-text");
                           e.target.classList.add("text-light");
                         }
                       }}
@@ -537,7 +540,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/gallery'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/gallery'
@@ -545,12 +548,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/#') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/#') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -562,7 +565,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === '/whats-on'
-                          ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                          ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                           : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                       }
                       href='/whats-on'
@@ -570,12 +573,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== '/whats-on') {
                           e.target.classList.remove('text-light');
-                          e.target.classList.add('text-warning');
+                          e.target.classList.add('body-text');
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== '/whats-on') {
-                          e.target.classList.remove('text-warning');
+                          e.target.classList.remove('body-text');
                           e.target.classList.add('text-light');
                         }
                       }}
@@ -587,7 +590,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === "/whats-on/holi-2023"
-                          ? "d-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor"
+                          ? "d-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor"
                           : "d-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor"
                       }
                       href="/whats-on/holi-2023"
@@ -595,12 +598,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== "/whats-on/holi-2023") {
                           e.target.classList.remove("text-light");
-                          e.target.classList.add("text-warning");
+                          e.target.classList.add("body-text");
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== "/whats-on/holi-2023") {
-                          e.target.classList.remove("text-warning");
+                          e.target.classList.remove("body-text");
                           e.target.classList.add("text-light");
                         }
                       }}
@@ -613,7 +616,7 @@ const Navbar = () => {
                     <Link
                       className={
                         location.pathname === "/gift-voucher"
-                          ? "d-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor"
+                          ? "d-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor"
                           : "d-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor"
                       }
                       href="/gift-voucher"
@@ -621,12 +624,12 @@ const Navbar = () => {
                       onMouseOver={(e) => {
                         if (location.pathname !== "/gift-voucher") {
                           e.target.classList.remove("text-light");
-                          e.target.classList.add("text-warning");
+                          e.target.classList.add("body-text");
                         }
                       }}
                       onMouseOut={(e) => {
                         if (location.pathname !== "/gift-voucher") {
-                          e.target.classList.remove("text-warning");
+                          e.target.classList.remove("body-text");
                           e.target.classList.add("text-light");
                         }
                       }}
@@ -696,7 +699,7 @@ const Navbar = () => {
                   <Link
                     className={
                       location.pathname === '/locations/holbornhall-london'
-                        ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                        ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                         : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                     }
                     href='/locations/holbornhall-london'
@@ -706,14 +709,14 @@ const Navbar = () => {
                         location.pathname !== '/locations/holbornhall-london'
                       ) {
                         e.target.classList.remove('text-light');
-                        e.target.classList.add('text-warning');
+                        e.target.classList.add('body-text');
                       }
                     }}
                     onMouseOut={(e) => {
                       if (
                         location.pathname !== '/locations/holbornhall-london'
                       ) {
-                        e.target.classList.remove('text-warning');
+                        e.target.classList.remove('body-text');
                         e.target.classList.add('text-light');
                       }
                     }}
@@ -726,7 +729,7 @@ const Navbar = () => {
                   <Link
                     className={
                       location.pathname === '/locations/trafalgarsquare-london'
-                        ? 'd-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor'
+                        ? 'd-inline-block p-2 position-relative overflow-hidden menu body-text text-decoration-none custom-cursor'
                         : 'd-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor'
                     }
                     href='/locations/trafalgarsquare-london'
@@ -737,7 +740,7 @@ const Navbar = () => {
                         '/locations/trafalgarsquare-london'
                       ) {
                         e.target.classList.remove('text-light');
-                        e.target.classList.add('text-warning');
+                        e.target.classList.add('body-text');
                       }
                     }}
                     onMouseOut={(e) => {
@@ -745,7 +748,7 @@ const Navbar = () => {
                         location.pathname !==
                         '/locations/trafalgarsquare-london'
                       ) {
-                        e.target.classList.remove('text-warning');
+                        e.target.classList.remove('body-text');
                         e.target.classList.add('text-light');
                       }
                     }}
@@ -784,10 +787,10 @@ const Navbar = () => {
                     end
                     onMouseOver={(e) => {
                       e.target.classList.remove("text-light");
-                      e.target.classList.add("text-warning");
+                      e.target.classList.add("body-text");
                     }}
                     onMouseOut={(e) => {
-                      e.target.classList.remove("text-warning");
+                      e.target.classList.remove("body-text");
                       e.target.classList.add("text-light");
                     }}
                   >
@@ -803,10 +806,10 @@ const Navbar = () => {
                     end
                     onMouseOver={(e) => {
                       e.target.classList.remove("text-light");
-                      e.target.classList.add("text-warning");
+                      e.target.classList.add("body-text");
                     }}
                     onMouseOut={(e) => {
-                      e.target.classList.remove("text-warning");
+                      e.target.classList.remove("body-text");
                       e.target.classList.add("text-light");
                     }}
                   >

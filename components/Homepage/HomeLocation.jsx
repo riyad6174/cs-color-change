@@ -41,7 +41,7 @@ const HomeLocation = () => {
 
             <Link
               href='/locations/holbornhall-london'
-              class=' mt-1  text-decoration-none body-text menu  custom-cursor'
+              class=' mt-1  text-decoration-none text-warning menu  custom-cursor'
             >
               <p className='h5'>Holborn Hall, London</p>
             </Link>
@@ -58,7 +58,7 @@ const HomeLocation = () => {
 
             <Link
               href='/locations/trafalgarsquare-london'
-              class=' mt-1 text-decoration-none body-text menu  custom-cursor'
+              class=' mt-1 text-decoration-none text-warning menu  custom-cursor'
             >
               <p className='h5'>Trafalgar Square, London</p>
             </Link>

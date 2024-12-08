@@ -56,7 +56,7 @@ const Footer = () => {
   return (
     <>
       <div className='row overflow-hidden mt-5 mt-lg-0 mx-0'>
-        <div className='container-fluid bg-warning px-5 py-3'>
+        <div className='container-fluid bg-button px-5 py-3'>
           <div className='row py-1'>
             <div className='col-12 col-lg-4 text-light text-center text-lg-start d-flex flex-column justify-content-center'>
               <div>
@@ -170,7 +170,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='container-fluid px-0 px-sm-5 pt-2 pb-5 py-md-2 bg-success'>
+        <div className='container-fluid px-0 px-sm-5 pt-2 pb-5 py-md-2 bg-warning'>
           <div className='col-12 text-light'>
             <div className='d-flex flex-column flex-lg-row justify-content-lg-center align-items-center w-100'>
               <div className='dropup me-0 me-lg-4' ref={noorGroupDropdownRef}>

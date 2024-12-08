@@ -91,7 +91,7 @@ const MenuSection = () => {
                         target={item.pdfExist ? '_blank' : '_self'}
                         rel='noreferrer'
                         key={index}
-                        className='title-text lh-1 m-0 menu-text custom-cursor  text-center'
+                        className='text-warning lh-1 m-0 menu-text custom-cursor  text-center'
                         onMouseOver={(e) => {
                           e.target.classList.add('fw-bold');
                         }}
@@ -118,12 +118,12 @@ const MenuSection = () => {
               >
                 <button
                   type='button'
-                  className='btn btn-outline text-success rounded-0 border border-warning custom-cursor'
+                  className='btn btn-outline  rounded-0 border border-warning custom-cursor'
                   onMouseOver={(e) => {
-                    e.target.classList.add('bg-white');
+                    e.target.classList.add('bg-warning', 'body-text');
                   }}
                   onMouseOut={(e) => {
-                    e.target.classList.remove('bg-white');
+                    e.target.classList.remove('bg-warning', 'body-text');
                   }}
                 >
                   SEE MORE
@@ -145,7 +145,7 @@ const MenuSection = () => {
               >
                 MEMSAAB&apos;S TASTING <br /> MENU
               </p>
-              <p className='mb-1 title-text text-center'>
+              <p className='mb-1 text-warning text-center'>
                 Experience a culinary <br />
                 journey with Chef <br />
                 Sohan Bhandari, <br />
@@ -159,12 +159,12 @@ const MenuSection = () => {
               >
                 <button
                   type='button'
-                  className='btn btn-outline text-success rounded-0 border border-warning custom-cursor'
+                  className='btn btn-outline  rounded-0 border border-warning custom-cursor'
                   onMouseOver={(e) => {
-                    e.target.classList.add('bg-white');
+                    e.target.classList.add('bg-warning', 'body-text');
                   }}
                   onMouseOut={(e) => {
-                    e.target.classList.remove('bg-white');
+                    e.target.classList.remove('bg-warning', 'body-text');
                   }}
                 >
                   SEE MORE

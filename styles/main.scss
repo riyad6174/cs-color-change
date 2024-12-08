@@ -33,7 +33,7 @@ body {
 }
 
 .title-text {
-  color: #641f23 !important;
+  color: #374038 !important;
 }
 
 .body-text {
@@ -57,7 +57,10 @@ body {
 }
 
 .bg-warning {
-  background-color: #341f23 !important;
+  background-color: #641f23 !important;
+}
+.bg-button {
+  background-color: #767158 !important;
 }
 
 .border-success {
@@ -65,7 +68,7 @@ body {
 }
 
 .border-warning {
-  border-color: #341f23 !important;
+  border-color: #641f23 !important;
 }
 
 .border-pink {
@@ -73,7 +76,7 @@ body {
 }
 
 .menu-button:hover {
-  background-color: #341f23 !important;
+  background-color: #641f23 !important;
   border-color: #374038 !important;
 }
 
@@ -116,7 +119,7 @@ body {
 }
 
 .btn-social-footer {
-  color: #341f23 !important;
+  color: #767158 !important;
   background-color: #ffffff !important;
   /* border: 1px solid rgb(255, 255, 255); */
 }
@@ -132,7 +135,7 @@ body {
 }
 
 .btn-menu-footer:hover {
-  color: #341f23 !important;
+  color: #641f23 !important;
 }
 
 .image-reveal {
@@ -263,7 +266,7 @@ body {
 }
 
 .rc-slider-rail {
-  background-color: #341f23 !important;
+  background-color: #641f23 !important;
 }
 
 .rc-slider-track {
@@ -295,7 +298,7 @@ body {
 .booking-btn-dropdown {
   .dropup-content {
     position: absolute;
-    background-color: #374038;
+    background-color: #767158;
     width: 12rem;
     bottom: -5rem;
     z-index: 1;
@@ -303,7 +306,7 @@ body {
   }
   .dropup-content-with-rem {
     position: absolute;
-    background-color: #374038;
+    background-color: #767158;
     width: 12rem;
     bottom: -2.5rem;
     z-index: 1;
@@ -314,7 +317,7 @@ body {
 .mb-booking-btn-dropdown {
   .dropup-content {
     position: absolute;
-    background-color: #374038;
+    background-color: #767158;
     width: 100%;
     bottom: 2.5rem;
     z-index: 1;
@@ -324,7 +327,7 @@ body {
 
 .dropup-content {
   position: absolute;
-  background-color: #374038;
+  background-color: #767158;
   width: 12rem;
   bottom: 2rem;
   z-index: 1;
@@ -334,7 +337,7 @@ body {
 .booking-btn-dropdown {
   .dropup-content {
     position: absolute;
-    background-color: #374038;
+    background-color: #767158;
     width: 12rem;
     bottom: -5rem;
     z-index: 1;
@@ -345,7 +348,7 @@ body {
 .mb-booking-btn-dropdown {
   .dropup-content {
     position: absolute;
-    background-color: #374038;
+    background-color: #767158;
     width: 100%;
     bottom: 2.5rem;
     z-index: 1;
@@ -367,10 +370,10 @@ body {
 }
 
 .dropup-content a:hover {
-  background-color: #341f23;
+  background-color: #641f23;
 }
 .dropup-content-with-rem a:hover {
-  background-color: #341f23;
+  background-color: #641f23;
 }
 
 @media only screen and (min-width: 992px) {
@@ -601,7 +604,7 @@ body {
 }
 
 .active {
-  background-color: #341f23 !important; /* Active state color */
+  background-color: #641f23 !important; /* Active state color */
   border-color: #1f8031 !important; /* Change border color to match */
 }
 

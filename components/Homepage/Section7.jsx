@@ -89,7 +89,7 @@ const Section7 = () => {
                                             'border-success'
                                           );
                                           e.target.classList.add(
-                                            'bg-success',
+                                            'bg-button',
                                             'text-white',
                                             'border-white'
                                           );
@@ -99,7 +99,7 @@ const Section7 = () => {
                                             'border-success'
                                           );
                                           e.target.classList.remove(
-                                            'bg-success',
+                                            'bg-button',
                                             'text-white',
                                             'border-white'
                                           );

@@ -1,19 +1,19 @@
 const PrimaryButton = (props) => {
   return (
     <button
-      type="button"
+      type='button'
       className={
         props.className
-          ? `btn text-light border border-warning rounded-0 custom-cursor bg-success ${props.className} `
-          : "btn text-light border border-warning rounded-0 custom-cursor bg-success"
+          ? `btn text-light border border-warning rounded-0 custom-cursor bg-button ${props.className} `
+          : 'btn text-light border border-warning rounded-0 custom-cursor bg-button'
       }
       onMouseOver={(e) => {
-        e.target.classList.remove("bg-success");
-        e.target.classList.add("bg-transparent", "text-success");
+        e.target.classList.remove('bg-button');
+        e.target.classList.add('bg-warning', 'body-text');
       }}
       onMouseOut={(e) => {
-        e.target.classList.remove("bg-transparent", "text-success");
-        e.target.classList.add("bg-success");
+        e.target.classList.remove('bg-warning', 'body-text');
+        e.target.classList.add('bg-button');
       }}
       onClick={props.onClick}
     >
